@@ -1,13 +1,22 @@
 @chaset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Sriracha&display=swap');
 
+
+:root{
+    --fonte1: 'Sriracha', cursive;
+    --fonte2: 'Merriweather', serif;
+    --fonte3:  Verdana, Geneva, Tahoma, sans-serif;
+}
 *{
 margin: 0px;
 padding: 0px;
+
 }
 html, body{
 min-height: 100vh;
-background-color: darkgray;
-    
+background-color: darkgray; 
+font-family: var(--fonte3); 
 }
 header{
     background-color: black;
@@ -17,6 +26,8 @@ header{
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 5vw;
+    font-family: var(--fonte2);
 } 
 header > p {
     padding-bottom: 50px;
@@ -34,6 +45,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3vw;
+    font-family: var(--fonte1);
 }
 section.normal{
     background-color: white;
